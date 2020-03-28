@@ -1,4 +1,4 @@
-#Project Title
+# Project Title
 
 URL shortener
 
@@ -34,13 +34,13 @@ mvn spring-boot:run
 ```
 
 
-#Using the application
+# Using the application
 
 1. To get shorter form of URL, go to browser and open http://localhost:8080
 
 2. To test the shortened URL, click on the 
 
-#Design Approach
+# Design Approach
 
 Its truncating from the well known MD5 algorithm and generating shortened string.
 
