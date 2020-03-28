@@ -26,7 +26,6 @@ public class UrlShortController {
 	
 	@GetMapping("/{shortened}")
 	public void doRedirect(HttpServletResponse response, @PathVariable String shortened) {
-		System.out.println(shortened);
 		String origUrl = urlShortenService.getShortenedUrl(shortened);
 		if(StringUtils.isNotEmpty(origUrl)) {
 			try {
@@ -50,7 +49,6 @@ public class UrlShortController {
 	
 	@GetMapping("/url/shortner")
 	public String getUrlShort() {
-		System.out.println("Hello");
 		return "index";
 		
     }

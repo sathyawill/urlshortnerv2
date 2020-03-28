@@ -12,7 +12,7 @@
         
         Original Url: ${urlShortener.url}<br>
         <br>
-        Shortened: <a href="http://localhost:8080/${urlShortener.shortened}">http://localhost:8080/${urlShortener.shortened}</a><br>
+        Shortened: <a href="/${urlShortener.shortened}">${urlShortener.shortened}</a><br>
         <#else>
         <h2>Enter the Url to shorten</h2>
         <form action="/url/shortner" method="post">

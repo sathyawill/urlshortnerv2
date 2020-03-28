@@ -5,7 +5,6 @@ import java.util.Collection;
 import java.util.HashMap;
 
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.codewithwilliam.shortner.encoding.impl.MD5EncodingServiceImpl;
@@ -14,7 +13,6 @@ import com.codewithwilliam.shortner.service.UrlShortenService;
 @Service
 public class UrlShortenServiceImpl implements UrlShortenService {
 
-	
 	
 	private static final int DEFAULT_BYTES = 5;
 	
@@ -51,7 +49,6 @@ public class UrlShortenServiceImpl implements UrlShortenService {
 		
 		String shortenedUrlString = "";
 		shortenedUrlString = urlMap.get(data);
-		
 		return shortenedUrlString;
 	}
 
