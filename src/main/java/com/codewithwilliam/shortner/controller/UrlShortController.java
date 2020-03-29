@@ -48,7 +48,9 @@ public class UrlShortController {
 	} 
 	
 	@GetMapping("/url/shortner")
-	public String getUrlShort() {
+	public String getUrlShort(Model model) {
+		UrlShortener urlToShorten = new UrlShortener();
+		model.addAttribute("urlShortener", urlToShorten);
 		return "index";
 		
     }

@@ -16,10 +16,7 @@
         <#else>
         <h2>Enter the Url to shorten</h2>
         <form action="/url/shortner" method="post">
-            Url:<br>
-            <input type="text" name="url">
-            <br><br>
-            <input type="submit" value="Submit">
+            URL:  <input type="text" name="url" size="100">&nbsp <input type="submit" value="Shorten">
         </form>
         </#if>
     </body>

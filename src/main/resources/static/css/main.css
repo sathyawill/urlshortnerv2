@@ -4,3 +4,12 @@ h2 {
 h3 {
   color: darkblue;
 }
+
+
+.relative {
+  background-color: lightgrey;
+  width: 400px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
