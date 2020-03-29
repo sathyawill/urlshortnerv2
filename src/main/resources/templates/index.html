@@ -12,7 +12,8 @@
 		<h3>Your submitted data</h3>
 		<br> 
 		<span>URL:</span><span th:text="${urlShortener.url}"></span><br>
-		<span>Shortened:</span><a th.href="${urlShortener.shortened}"
+		<span>Shortened:</span>
+		<a th:href="@{'/'+${urlShortener.shortened}}"
 			th:text="${urlShortener.shortened}"/></span><br> 
 		<span>
 			<form>
